@@ -1,11 +1,11 @@
-import { createBrowserRouter, RouterProvider } from 'react-router-dom';
+import {createHashRouter, RouterProvider } from 'react-router-dom';
 import Layout from './Layout/Layout';
 import Home from './Home/Home';
 import About from './About/About';
 import Portfolio from './Portfolio/Portfolio';
 import Contact from './Contact/Contact';
 export default function App() {
-  const route = createBrowserRouter([
+  const route = createHashRouter([
     { path:"/", element: <Layout /> , children:[
       { path:"/", element: <Home /> },
       { path:'/home', element: <Home /> },
